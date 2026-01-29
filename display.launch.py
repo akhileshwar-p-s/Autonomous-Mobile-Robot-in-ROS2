@@ -5,38 +5,35 @@ from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
     
-    # Get URDF via xacro
     robot_description_content = Command([
         'xacro ', 
         PathJoinSubstitution([
-            FindPackageShare('robot_pkg'),
+            FindPackageShare('warehouse_pkg'),
             'urdf',
-            'my_diffbot.urdf.xacro'
+            'warehouse_bot.urdf.xacro'
         ])
     ])
     
     robot_description = {'robot_description': robot_description_content}
     
-    # Robot State Publisher
+    
     robot_state_publisher_node = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
         parameters=[robot_description]
     )
-    
-    # Joint State Publisher GUI
+
     joint_state_publisher_gui_node = Node(
         package='joint_state_publisher_gui',
         executable='joint_state_publisher_gui'
     )
     
-    # RViz
     rviz_node = Node(
         package='rviz2',
         executable='rviz2',
         name='rviz2',
         arguments=['-d', PathJoinSubstitution([
-            FindPackageShare('robot_pkg'),
+            FindPackageShare('warehouse_pkg'),
             'rviz',
             'display.rviz'
         ])]
