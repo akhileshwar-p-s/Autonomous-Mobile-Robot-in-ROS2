@@ -12,6 +12,11 @@ This project features a differential drive mobile robot equipped with SLAM capab
 **Simulation:** Gazebo  
 **Visualization:** RViz2  
 **Navigation:** Nav2 Stack
+<img width="1918" height="951" alt="Screenshot from 2026-01-29 18-20-09" src="https://github.com/user-attachments/assets/b1d54966-0880-4e41-998e-1ac2782f5d20" />
+
+<img width="1912" height="951" alt="Screenshot from 2026-01-29 18-42-07" src="https://github.com/user-attachments/assets/e72ca34f-233a-48e6-b86c-e9bf31c1db44" />
+
+<img width="1912" height="951" alt="Screenshot from 2026-01-29 18-42-20" src="https://github.com/user-attachments/assets/04cf39b0-debb-4c4f-b9a4-47100ea0f632" />
 
 ## ✨ Features
 
