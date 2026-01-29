@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>robot_pkg</name>
+  <name>warehouse_pkg</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
   <maintainer email="aps3@todo.todo">aps3</maintainer>
@@ -11,15 +11,19 @@
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
-  <depend>gazebo_ros</depend>
-  <depend>gazebo_plugins</depend>
-  <depend>gazebo_ros_pkgs</depend>
+
   <depend>urdf</depend>
   <depend>xacro</depend>
   <depend>robot_state_publisher</depend>
   <depend>joint_state_publisher</depend>
   <depend>joint_state_publisher_gui</depend>
   <depend>rviz2</depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <depend>gazebo_ros</depend>
+  <depend>gazebo_plugins</depend>
+  <depend>gazebo_ros_pkgs</depend>
+
 
   <export>
     <build_type>ament_cmake</build_type>
